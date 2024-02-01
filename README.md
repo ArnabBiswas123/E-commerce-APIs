@@ -1,46 +1,37 @@
-**This documentation provides information on how to set up, run, and test the Node Express project. Follow the steps below to get started.**
+<h1 align="center" id="title">E-Commerce-APIs</h1>
 
+<h2>🛠️ Installation Steps:</h2>
 
-Table of Contents:
-Installation:
-Configuration:
-Run the Application:
-Testing:
-Installation:
+<p>1. Clone the repository</p>
 
-Clone the repository:
-
+```
 git clone https://github.com/ArnabBiswas123/E-commerce-APIs.git
+```
 
-Change into the project directory:
+<p>2. Change into the project directory</p>
+
+```
 cd E-commerce-APIs
+```
 
+<p>3. Install dependencies</p>
 
-Install dependencies:
+```
 npm install
+```
 
+<p>4. Configuration Create a .env file in the project root</p>
 
-Configuration
-Create a .env file in the project root with the following configuration:
+```
 MONGO_URI=mongodb+srv://iamarnabbiswas2001:arnab123@cluster0.mjr3rpf.mongodb.net/?retryWrites=true&w=majority
+```
 
+<p>5. Run the Application</p>
 
-Run the Application
-To start the Node Express application, use the following command:
-npm start
-The application will be running on http://localhost:5000 by default (change the port in the .env file if necessary).
+```
+ npm start
+```
 
-Testing
-The project uses Mocha as the testing framework and Chai for assertions.
+<h2>🍰 Contribution Guidelines:</h2>
 
-Run the tests with the following command:
-
-npm test
-This will execute the test suite and provide feedback on the test results.
-
-API documentation 
-https://documenter.getpostman.com/view/32180071/2s9Yyti1uN
-
-
-Assumption
-Product model has name as unique key
+<h2>💖Like my work?</h2>
