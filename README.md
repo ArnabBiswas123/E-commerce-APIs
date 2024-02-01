@@ -1,12 +1,12 @@
 This documentation provides information on how to set up, run, and test the Node Express project. Follow the steps below to get started.
 
 
-Table of Contents
-Installation
-Configuration
-Run the Application
-Testing
-Installation
+Table of Contents:
+Installation:
+Configuration:
+Run the Application:
+Testing:
+Installation:
 
 Clone the repository:
 
