@@ -32,6 +32,18 @@ MONGO_URI=mongodb+srv://iamarnabbiswas2001:arnab123@cluster0.mjr3rpf.mongodb.net
  npm start
 ```
 
-<h2>🍰 Contribution Guidelines:</h2>
+<p>6. Test the Application</p>
 
-<h2>💖Like my work?</h2>
+```
+ npm test
+```
+<p>Testing The project uses Mocha as the testing framework and Chai for assertions.</p>
+
+<h3>API documentation:</h3>
+<a>https://documenter.getpostman.com/view/32180071/2s9Yyti1uN</a>
+
+<h3>
+Assumption Product model has name as unique key</h3>
+
+
+
