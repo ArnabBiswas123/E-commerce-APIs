@@ -56,6 +56,6 @@ const updatedVariant=async () => {
     expect(otherVariant).to.have.property('additionalCost').that.is.a('number').and.equal(30);
     expect(otherVariant).to.have.property('stockCount').that.is.a('number').and.equal(40);
 
-    // Add more assertions based on your specific response structure
+
   }
 module.exports=updatedVariant;

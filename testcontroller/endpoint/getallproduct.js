@@ -12,13 +12,12 @@ const getallproduct= async () => {
     await Product.insertMany(testData);
 
     const response = await request
-      .get('/api/v1/products/getallproduct') // Use the correct path
+      .get('/api/v1/products/getallproduct') 
       .send();
 
     expect(response.body).to.have.property('success', true);
     expect(response.body).to.have.property('products');
     expect(response.body.products).to.have.lengthOf(testData.length);
 
-    // Add more assertions based on your expected response structure
   }
   module.exports=getallproduct

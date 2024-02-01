@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const Product = require("../../model/productModel");
+
 const supertest = require("supertest");
 const app=require('../../app')
 const request = supertest(app);

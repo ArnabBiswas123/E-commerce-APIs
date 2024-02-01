@@ -1,5 +1,4 @@
 const express = require('express');
-const connectDB = require('./db/connect')
 const productRouter=require('./routers/productRouter')
 
 
@@ -17,17 +16,4 @@ app.get('/',(req, res) => {
 
 app.use('/api/v1/products',productRouter)
 
-// const start = async () => {
-//     try {
-//         await connectDB(process.env.MONGO_URI)
-//         await app.listen(port, () => {
-//             console.log(`Example app listening on port ${port}`)
-//         })
-//     }
-//     catch (error) {
-//         console.log(error)
-//     }
-// }
-
-// start();
 module.exports = app;

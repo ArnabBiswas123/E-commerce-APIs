@@ -4,7 +4,6 @@ const supertest = require("supertest");
 const app=require('../../app')
 const request = supertest(app);
 const deletedProductById=async () => {
-    // Create a product to be deleted
     const product = new Product({
       name: "ProductToDelete",
       description: "DescriptionToDelete",
@@ -13,7 +12,7 @@ const deletedProductById=async () => {
     await product.save();
 
     const response = await request
-      .delete(`/api/v1/products/deleteproduct/${product._id}`) // Use the correct path
+      .delete(`/api/v1/products/deleteproduct/${product._id}`)
       .send();
 
     expect(response.status).to.equal(200);

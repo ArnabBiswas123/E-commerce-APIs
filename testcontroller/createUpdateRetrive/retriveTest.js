@@ -20,7 +20,6 @@ const retriveTest=async () => {
     // Verify that the number of retrieved products matches the number of inserted products
     expect(allProducts).to.have.lengthOf(testData.length);
 
-    // Additional expectations based on your model structure
     for (let i = 0; i < testData.length; i++) {
         expect(allProducts[i].name).to.equal(testData[i].name);
  

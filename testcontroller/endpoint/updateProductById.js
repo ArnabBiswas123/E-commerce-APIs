@@ -19,7 +19,7 @@ const updateProductById= async () => {
     };
 
     const response = await request
-      .put(`/api/v1/products/updatebyproductid/${originalProduct._id}`) // Use the correct path
+      .put(`/api/v1/products/updatebyproductid/${originalProduct._id}`) 
       .send(updatedProductData);
 
     expect(response.status).to.equal(200);
@@ -27,6 +27,6 @@ const updateProductById= async () => {
     expect(response.body).to.have.property('product');
     expect(response.body.product).to.have.property('name', 'UpdatedProduct');
     expect(response.body.product).to.have.property('description', 'UpdatedDescription');
-    // Add more assertions based on your expected response structure
+
   }
 module.exports=updateProductById

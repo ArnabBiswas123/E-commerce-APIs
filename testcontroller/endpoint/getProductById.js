@@ -13,13 +13,13 @@ const getProductById=async () => {
     await product.save();
 
     const response = await request
-      .get(`/api/v1/products/getproduct/${product._id}`) // Use the correct path
+      .get(`/api/v1/products/getproduct/${product._id}`) 
       .send();
 
     expect(response.status).to.equal(200);
     expect(response.body).to.have.property('success', true);
     expect(response.body).to.have.property('product');
     expect(response.body.product).to.have.property('name', 'ProductToGet');
-    // Add more assertions based on your expected response structure
+
   }
 module.exports=getProductById

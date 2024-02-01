@@ -1,7 +1,5 @@
-const expect = require("chai").expect;
+
 const mongoose = require("mongoose");
-const supertest = require("supertest");
-const app = require("../app");
 const Product = require("../model/productModel");
 const createproduct = require("../testcontroller/endpoint/createproduct");
 const nonUniqueproduct = require("../testcontroller/endpoint/nonUniqueproduct");
@@ -13,8 +11,7 @@ const updateProductById = require("../testcontroller/endpoint/updateProductById"
 const updatedVariant = require("../testcontroller/endpoint/updateVariant");
 const successfullSearch=require('../testcontroller/endpoint/successfullSearch')
 const unsuccessfullSearch=require('../testcontroller/endpoint/unsuccessfullSearch')
-// const app = createApp();
-const request = supertest(app);
+
 
 describe("Product Routes Tests", () => {
   before(async () => {
