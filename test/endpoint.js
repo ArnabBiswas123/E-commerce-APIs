@@ -1,4 +1,3 @@
-
 const mongoose = require("mongoose");
 const Product = require("../model/productModel");
 const createproduct = require("../testcontroller/endpoint/createproduct");
@@ -9,9 +8,8 @@ const nonExistingProduct = require("../testcontroller/endpoint/nonExistingProduc
 const getallproduct = require("../testcontroller/endpoint/getallproduct");
 const updateProductById = require("../testcontroller/endpoint/updateProductById");
 const updatedVariant = require("../testcontroller/endpoint/updateVariant");
-const successfullSearch=require('../testcontroller/endpoint/successfullSearch')
-const unsuccessfullSearch=require('../testcontroller/endpoint/unsuccessfullSearch')
-
+const successfullSearch = require("../testcontroller/endpoint/successfullSearch");
+const unsuccessfullSearch = require("../testcontroller/endpoint/unsuccessfullSearch");
 
 describe("Product Routes Tests", () => {
   before(async () => {
@@ -45,7 +43,7 @@ describe("Product Routes Tests", () => {
 
   it("should update a variant by product and variant ID", updatedVariant);
 
-  it('should return products matching the search term',successfullSearch);
+  it("should return products matching the search term", successfullSearch);
 
-  it('should return a message for no products found', unsuccessfullSearch);
+  it("should return a message for no products found", unsuccessfullSearch);
 });
