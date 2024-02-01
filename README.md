@@ -1,4 +1,4 @@
-This documentation provides information on how to set up, run, and test the Node Express project. Follow the steps below to get started.
+**This documentation provides information on how to set up, run, and test the Node Express project. Follow the steps below to get started.**
 
 
 Table of Contents:
